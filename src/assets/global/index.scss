@@ -1,0 +1,123 @@
+.login {
+  padding: 2rem;
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Source Serif Pro", serif;
+
+  background-image: url("../global/images/bg.jpg");
+  &-sibar {
+    padding-top: 6rem !important;
+    &__title {
+      font-size: 47px;
+    }
+    &__info {
+      font-size: 22px;
+      margin-top: 1rem;
+    }
+  }
+  &-form {
+    .v-card {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 12px;
+    }
+    &-head {
+      &__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      &__caption {
+        font-size: 1rem;
+        font-weight: 500;
+        span {
+          color: #fb0b0b;
+        }
+      }
+    }
+    &-content {
+      .v-input {
+        &__overlay {
+          background-color: #fff;
+        }
+        &__control {
+          // border: 1px solid #ddd;
+          // border-radius: 12px;
+          // background-color: #fff;
+          .v-field {
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+          }
+        }
+      }
+      .v-field__outline {
+        display: none !important;
+      }
+      .v-text-field {
+        .v-input__details {
+          display: none !important;
+        }
+      }
+    }
+    &-action {
+      padding:  0px 1rem;
+      .v-btn {
+        width: 100%;
+        background: #db0000;
+        color: #fff !important;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        border-radius: 6px;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/global/images/matgoctienganhphailamsao1.jpg");
+  background-size: cover;
+  &-list {
+    padding: 12px 1rem;
+    .header-nav {
+      display: flex;
+      margin-left: 5rem;
+      align-items: center;
+      &-item {
+        color: #fff;
+        text-decoration: none;
+        padding: 1.875rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        position: relative;
+        
+        &::before {
+          content: "";
+          width: 0%;
+        }
+        &:hover {
+          &::before {
+            width: 100%;
+            transition: width 0.5s;
+            position: absolute;
+      
+            left: 0;
+            background-color: #fff;
+            bottom: 0;
+            height: 3px;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+    .header-login {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
